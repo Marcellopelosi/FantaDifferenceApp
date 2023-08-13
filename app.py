@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
+import  openpyxl
 
 
-
-last_year_player = last_year_players =['Romagnoli S.',
+last_year_players =['Romagnoli S.',
  'Maggiore',
  'Vranckx',
  'Lukaku',
