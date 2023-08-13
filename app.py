@@ -570,8 +570,7 @@ def main():
 
         # Display the differences
         st.subheader("Risultato:")
-        actual_players_df.loc[~actual_players_df["Unnamed: 3"].isin(last_year_players)]
-        st.write(df_diff)
+        st.write(df_diff.loc[~df_diff["Unnamed: 3"].isin(last_year_players)])
 
 if __name__ == '__main__':
     main()
