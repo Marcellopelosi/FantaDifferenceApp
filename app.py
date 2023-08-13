@@ -557,8 +557,8 @@ def main():
 
     # Upload the CSV files
     st.sidebar.header("Carica gli excels dei tuoi listoni")
-    uploaded_file1 = st.sidebar.file_uploader("Carica il listone vecchio", type=["excel"])
-    uploaded_file2 = st.sidebar.file_uploader("Carica il listone nuovo", type=["excel"])
+    uploaded_file1 = st.sidebar.file_uploader("Carica il listone vecchio", type=["xlsx"])
+    uploaded_file2 = st.sidebar.file_uploader("Carica il listone nuovo", type=["xlsx"])
 
     if uploaded_file1 and uploaded_file2:
         # Load DataFrames from uploaded files
