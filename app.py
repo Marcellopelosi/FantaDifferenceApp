@@ -562,8 +562,8 @@ def main():
 
     if uploaded_file1 and uploaded_file2:
         # Load DataFrames from uploaded files
-        df1 = pd.read_csv(uploaded_file1)
-        df2 = pd.read_csv(uploaded_file2)
+        df1 = pd.read_excel(uploaded_file1)
+        df2 = pd.read_excel(uploaded_file2)
 
         # Calculate the difference between DataFrames
         df_diff = df1.merge(df2, how='outer', indicator=True).loc[lambda x: x['_merge'] != 'both']
